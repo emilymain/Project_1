@@ -21,8 +21,8 @@ The game will display an image of a musical note on the staff and the player wil
 
 
 #####Wire Frames
-![](/assets/wireframe1.pdf)
-![](/assets/Wireframe2.pdf)
+![](assets/wireframe1.pdf)
+![](assets/Wireframe2.pdf)
 
 
 ##### User Story
