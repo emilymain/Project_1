@@ -1,0 +1,49 @@
+
+body {
+  background-color: #FED766;
+
+}
+#container {
+  width: 707px;
+  height: 320px;
+  position: absolute;
+  bottom: 5px;
+  right: 25%;
+}
+.whiteKeys {
+  display: inline-block;
+  float: left;
+  background-color: #EFF1F3;
+  width: 90px;
+  height: 300px;
+  border: solid .2px #040403;
+  border-radius: 2%;
+}
+#containerBlackKeys{
+  position: absolute;
+  top: 0;
+}
+.blackKeys {
+  background-color: #040403;
+  width: 60px;
+  height: 190px;
+  float: left;
+  border-radius: 5%;
+
+}
+#keyAsh {
+  margin-left: 35px;
+
+}
+#keyGsh {
+  margin-left: 30px;
+}
+#keyFsh {
+  margin-left: 125px;
+}
+#keyDsh {
+  margin-left: 35px;
+}
+#keyCsh {
+  margin-left: 60px;
+}
