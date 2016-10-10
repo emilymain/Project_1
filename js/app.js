@@ -2,8 +2,6 @@ $(document).ready(function(){
 
 console.log("Connected!")
 //
-//
-
 
 var aTreble = {
   img: 'assets/ATreble.png',
@@ -45,6 +43,7 @@ var gTreble = {
 
 var currentCombo = fTreble
 var playedKeys = []
+var wrongGuess = [];
 
 
 $('.keys').on('click', function(){
@@ -55,13 +54,24 @@ $('.keys').on('click', function(){
   if (playedKeys.length == currentCombo.win.length){
     for (var i = 0; i<playedKeys.length; i++){
       if (playedKeys[i] != currentCombo.win[i]){
+
         console.log('Try Again!')
+        wrongGuess.push(true);
+        if (wrongGuess.length === 3) {
+          alert('you lose');
+          wrongGuess = [];
+        } else {
+          null;
+        };
         playedKeys=[]
+
+
 
         return;
       }
     }
     console.log('you win!')
+
   }
 })
 
@@ -71,7 +81,7 @@ $('.keys').on('click', function(){
 
 
 
-// $( "#whiteKeys" ).click();
+
 
 
 

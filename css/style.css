@@ -7,10 +7,22 @@ h1 {
   font-size: 40px;
   padding-left: 550px;
 }
+
 img {
   margin-left: 400px;
   max-width: 500px;
+  position: absolute;
+  bottom: 160px;
+  right: 35%;
 }
+/*#title {
+  font-size: 40px;
+  padding-left: 550px;
+  position: absolute;
+  bottom: 800px;
+  right: 35%;
+}*/
+
 #container {
   width: 707px;
   height: 320px;
