@@ -1,7 +1,15 @@
 
 body {
   background-color: #FED766;
-
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+h1 {
+  font-size: 40px;
+  padding-left: 550px;
+}
+img {
+  margin-left: 400px;
+  max-width: 500px;
 }
 #container {
   width: 707px;
