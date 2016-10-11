@@ -15,14 +15,9 @@ img {
   bottom: 160px;
   right: 35%;
 }
-/*#title {
-  font-size: 40px;
-  padding-left: 550px;
-  position: absolute;
-  bottom: 800px;
-  right: 35%;
-}*/
+.wrong {
 
+}
 #container {
   width: 707px;
   height: 320px;
