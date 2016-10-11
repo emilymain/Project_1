@@ -18,6 +18,9 @@ img {
 .wrong {
 
 }
+.score-board{
+  font-size: 30px;
+}
 
 #container {
   width: 707px;

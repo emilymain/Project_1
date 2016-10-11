@@ -59,6 +59,8 @@ $(document).ready(function(){
           if (wrongGuess === 3) {
             alert('you lose');
             wrongGuess = 0;
+            $('#wrong').text('Wrong: 0');
+            $('#correct').text('Correct: 0');
 
           }
           $('#message').text('Try Again!')
@@ -73,7 +75,7 @@ $(document).ready(function(){
       $('#correct').text('Correct: '+ correct)
       playedKeys = [];
       wrongGuess = 0;
-      if(correct=== 10){
+      if(correct === 10){
           alert('You win! Great Job');
 
       }
@@ -81,5 +83,9 @@ $(document).ready(function(){
       currentCombo = picturesArr[randomIndex];
       $("#musicNote").attr({src: currentCombo.img});
     }
+  })
+  $('#reset').on('click', function(){
+    $('#wrong').text('Wrong: 0');
+    $('#correct').text('Correct: 0');
   })
 })
