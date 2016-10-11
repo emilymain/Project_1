@@ -44,6 +44,7 @@ $(document).ready(function(){
   var correct = 0;
 
 
+
   $('.keys').on('click', function(){
     playedKeys.push($(this).attr('id'));
     console.log($(this).attr('id'));
@@ -58,6 +59,7 @@ $(document).ready(function(){
           if (wrongGuess === 3) {
             alert('you lose');
             wrongGuess = 0;
+
           }
           $('#message').text('Try Again!')
           $('#wrong').text('Wrong: ' + wrongGuess)
@@ -71,6 +73,10 @@ $(document).ready(function(){
       $('#correct').text('Correct: '+ correct)
       playedKeys = [];
       wrongGuess = 0;
+      if(correct=== 10){
+          alert('You win! Great Job');
+
+      }
       var randomIndex= Math.floor(Math.random()*9);
       currentCombo = picturesArr[randomIndex];
       $("#musicNote").attr({src: currentCombo.img});
