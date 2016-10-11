@@ -59,6 +59,8 @@ $(document).ready(function(){
             alert('you lose');
             wrongGuess = 0;
           }
+          $('#message').text('Try Again!')
+          $('#wrong').text('Wrong: ' + wrongGuess)
           playedKeys=[];
           return;
         }
