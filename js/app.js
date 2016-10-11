@@ -84,6 +84,10 @@ $(document).ready(function(){
       $("#musicNote").attr({src: currentCombo.img});
     }
   })
+  $('#keys').on('click',function(){
+
+  })
+
   $('#reset').on('click', function(){
     $('#wrong').text('Wrong: 0');
     $('#correct').text('Correct: 0');
