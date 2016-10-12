@@ -1,7 +1,7 @@
 
 body {
   background-color: #FED766;
-  font-family: 'Love Ya Like A Sister', cursive;
+  font-family: 'Josefin Slab', serif;
 }
 h1 {
   font-size: 40px;
@@ -22,13 +22,7 @@ img {
   font-size: 30px;
 }
 
-#container {
-  width: 707px;
-  height: 320px;
-  position: absolute;
-  bottom: 5px;
-  right: 25%;
-}
+
 .whiteKeys {
   display: inline-block;
   float: left;
@@ -38,10 +32,7 @@ img {
   border: solid .2px #040403;
   border-radius: 2%;
 }
-#containerBlackKeys{
-  position: absolute;
-  top: 0;
-}
+
 .blackKeys {
   background-color: #040403;
   width: 60px;
@@ -56,7 +47,28 @@ img {
 .hidden{
   display: none;
 }
+#container {
+  width: 707px;
+  height: 320px;
+  position: absolute;
+  bottom: 5px;
+  right: 25%;
+}
+#containerBlackKeys{
+  position: absolute;
+  top: 0;
+}
+#answerKey{
+  bottom: 5px;
 
+}
+#startGame{
+  margin-left: 650px;
+}
+#Instructions {
+  text-align: center;
+  font-size: 100%;
+}
 #keyAsh {
   margin-left: 35px;
 

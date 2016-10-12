@@ -54,7 +54,7 @@ $(document).ready(function(){
     $(this).addClass('selectedKey')
     setTimeout(function(){
       $currentKey.removeClass('selectedKey')
-    }, 500);
+    }, 300);
     playedKeys.push($(this).attr('id'));
     console.log($(this).attr('id'));
     console.log(playedKeys);
