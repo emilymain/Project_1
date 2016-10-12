@@ -53,6 +53,9 @@ img {
 .selectedKey{
   background-color: #009FB7;
 }
+.hidden{
+  display: none;
+}
 
 #keyAsh {
   margin-left: 35px;

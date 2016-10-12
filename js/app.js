@@ -44,6 +44,10 @@ $(document).ready(function(){
   var wrongGuess = 0;
   var correct = 0;
 
+  $('#startGame').click(function(){
+    $('#instructions').addClass('hidden')
+    $('#gameBoard').removeClass('hidden')
+  })
 
   $('.keys').on('click', function(){
     var $currentKey =$(this)
