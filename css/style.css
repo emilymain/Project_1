@@ -50,6 +50,10 @@ img {
   border-radius: 5%;
 
 }
+.selectedKey{
+  background-color: #009FB7;
+}
+
 #keyAsh {
   margin-left: 35px;
 

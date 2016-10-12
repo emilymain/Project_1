@@ -37,6 +37,7 @@ $(document).ready(function(){
     img: 'assets/GTreble.png',
     win: ['keyG']};
 
+
   var picturesArr = [fTreble, aTreble, bTreble, bTreble2, cTreble, dTreble1, dTreble2, eTreble1, gTreble];
   var currentCombo = fTreble;
   var playedKeys = [];
@@ -44,8 +45,12 @@ $(document).ready(function(){
   var correct = 0;
 
 
-
   $('.keys').on('click', function(){
+    var $currentKey =$(this)
+    $(this).addClass('selectedKey')
+    setTimeout(function(){
+      $currentKey.removeClass('selectedKey')
+    }, 500);
     playedKeys.push($(this).attr('id'));
     console.log($(this).attr('id'));
     console.log(playedKeys);
@@ -59,6 +64,7 @@ $(document).ready(function(){
           if (wrongGuess === 3) {
             alert('you lose');
             wrongGuess = 0;
+            correct = 0;
             $('#wrong').text('Wrong: 0');
             $('#correct').text('Correct: 0');
 
@@ -79,17 +85,17 @@ $(document).ready(function(){
           alert('You win! Great Job');
 
       }
+
       var randomIndex= Math.floor(Math.random()*9);
       currentCombo = picturesArr[randomIndex];
       $("#musicNote").attr({src: currentCombo.img});
     }
   })
-  // $('#keys').on('click',function(){
-  //
-  // })
 
-  $('#reset').on('click', function(){
-    $('#wrong').text('Wrong: 0');
-    $('#correct').text('Correct: 0');
-  })
-})
+    $('#reset').on('click', function(){
+      $('#wrong').text('Wrong: 0');
+      $('#correct').text('Correct: 0');
+      wrongGuess = 0;
+      correct = 0;
+    })
+  });
