@@ -17,6 +17,12 @@ The game will display an image of a musical note on the staff and the player wil
 * After 3 wrong attempts the user will be informed that they lost the game.
 * After 10 correct answers the user will win that round of the game.
 
+####Technology Used 
+* HTML
+* CSS
+* JavaScript/jQuery
+
+
 
 
 #####Wire Frames
