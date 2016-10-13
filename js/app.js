@@ -83,6 +83,55 @@ $(document).ready(function(){
   var wrongGuess = 0;
   var correct = 0;
 
+  $('#keyC').on('click',(function(){
+  $('#keyC').append('<audio autoplay="source"><source src="assets/MusicFiles/C.wav" type="audio/wav"></audio>')
+  }));
+
+  $('#keyD').on('click',(function(){
+  $('#keyD').append('<audio autoplay="source"><source src="assets/MusicFiles/D.wav" type="audio/wav"></audio>')
+  }));
+
+  $('#keyE').on('click',(function(){
+  $('#keyE').append('<audio autoplay="source"><source src="assets/MusicFiles/E.wav" type="audio/wav"></audio>')
+  }));
+
+  $('#keyF').on('click',(function(){
+  $('#keyF').append('<audio autoplay="source"><source src="assets/MusicFiles/F.wav" type="audio/wav"></audio>')
+  }));
+
+  $('#keyG').on('click',(function(){
+  $('#keyG').append('<audio autoplay="source"><source src="assets/MusicFiles/G.wav" type="audio/wav"></audio>')
+  }));
+
+  $('#keyA').on('click',(function(){
+  $('#keyA').append('<audio autoplay="source"><source src="assets/MusicFiles/A.wav" type="audio/wav"></audio>')
+  }));
+
+  $('#keyB').on('click',(function(){
+  $('#keyB').append('<audio autoplay="source"><source src="assets/MusicFiles/B.wav" type="audio/wav"></audio>')
+  }));
+
+  $('#keyCsh').on('click',(function(){
+  $('#keyCsh').append('<audio autoplay="source"><source src="assets/MusicFiles/Csharp.wav" type="audio/wav"></audio>')
+  }));
+
+  $('#keyDsh').on('click',(function(){
+  $('#keyDsh').append('<audio autoplay="source"><source src="assets/MusicFiles/Dsharp.wav" type="audio/wav"></audio>')
+  }));
+
+  $('#keyFsh').on('click',(function(){
+  $('#keyFsh').append('<audio autoplay="source"><source src="assets/MusicFiles/Fsharp.wav" type="audio/wav"></audio>')
+  }));
+
+
+  $('#keyGsh').on('click',(function(){
+  $('#keyGsh').append('<audio autoplay="source"><source src="assets/MusicFiles/Gsharp.wav" type="audio/wav"></audio>')
+  }));
+
+  $('#keyAsh').on('click',(function(){
+  $('#keyAsh').append('<audio autoplay="source"><source src="assets/MusicFiles/Asharp.wav" type="audio/wav"></audio>')
+  }));
+
   $('#startGame').click(function(){
     $('#instructions').addClass('hidden')
     $('#gameBoard').removeClass('hidden')
