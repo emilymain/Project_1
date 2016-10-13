@@ -78,10 +78,19 @@ $(document).ready(function(){
     win: ['keyG']};
 
   var picturesArr = [fTreble, aTreble, bTreble, cTreble, dTreble1, dTreble2, eTreble1, eTreble2, gTreble, aBass, aBassTwo, bBass, dBass, dBassTwo, eBass, fBass, fBassTwo, gBass, gBassTwo];
+  // var levelTwo = [fsharp, asdfdsaf,asasdfd, adfdasf,asdfdasfafsd]
   var currentCombo = fTreble;
   var playedKeys = [];
   var wrongGuess = 0;
   var correct = 0;
+
+  // var keys = ['keyC', 'keyD', 'keyE']
+  // keys.forEach(function(keyName) {
+  //   $('#' + keyName).on('click', function() {
+  //     $('#' + keyName).append('<audio autoplay="source"><source src="assets/MusicFiles/' + keyName + '.wav" type="audio/wav"></audio>')
+  //   })
+  // })
+
 
   $('#keyC').on('click',(function(){
   $('#keyC').append('<audio autoplay="source"><source src="assets/MusicFiles/C.wav" type="audio/wav"></audio>')
@@ -170,6 +179,9 @@ $(document).ready(function(){
       console.log('you win!');
       $('#message').text('Good Job!')
       correct += 1;
+      // if correct >= 10 {
+      //   picturesArr = levelTwo
+      // }
       $('#correct').text('Correct: '+ correct)
       playedKeys = [];
       wrongGuess = 0;
@@ -178,9 +190,7 @@ $(document).ready(function(){
 
       }
 
-      var randomIndex= Math.floor(Math.random()*19);
-      currentCombo = picturesArr[randomIndex];
-      $("#musicNote").attr({src: currentCombo.img});
+      newCombo();
     }
   })
 
@@ -190,4 +200,14 @@ $(document).ready(function(){
       wrongGuess = 0;
       correct = 0;
     })
+
+    function newCombo(){
+      var randomIndex= Math.floor(Math.random()*picturesArr.length);
+      if (currentCombo == picturesArr[randomIndex]){
+        newCombo();
+      } else {
+        currentCombo = picturesArr[randomIndex];
+        $("#musicNote").attr({src: currentCombo.img});
+      }
+    }
   });
