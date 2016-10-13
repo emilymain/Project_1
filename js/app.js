@@ -13,10 +13,6 @@ $(document).ready(function(){
     img: 'assets/BTreble.png',
     win:['keyB']};
 
-  var bTreble2 = {
-    img: 'assets/BTreble2.png',
-    win: ['keyB']};
-
   var cTreble = {
     img: 'assets/CTreble.png',
     win: ['keyC']};
@@ -33,12 +29,55 @@ $(document).ready(function(){
    img: 'assets/ETreble1.png',
    win: ['keyE']};
 
+  var eTreble2 = {
+    img: 'assets/ETreble2.png',
+    win: ['keyE']};
+
   var gTreble = {
     img: 'assets/GTreble.png',
     win: ['keyG']};
 
+  var aBass = {
+    img: 'assets/Abass.png',
+    win: ['keyA']};
 
-  var picturesArr = [fTreble, aTreble, bTreble, bTreble2, cTreble, dTreble1, dTreble2, eTreble1, gTreble];
+  var aBassTwo = {
+    img:'assets/Abass2.png',
+    win: ['keyA']};
+
+  var bBass = {
+    img: 'assets/Bbass.png',
+    win: ['keyB']};
+
+  var dBass = {
+    img: 'assets/Dbass.png',
+    win: ['keyD']};
+
+  var dBassTwo = {
+    img: 'assets/Dbass2.png',
+    win: ['keyD']};
+
+  var eBass = {
+    img: 'assets/Ebass.png',
+    win: ['keyE']};
+
+  var fBass = {
+    img: 'assets/Fbass.png',
+    win: ['keyF']};
+
+  var fBassTwo = {
+    img: 'assets/Fbass2.png',
+    win: ['keyF']};
+
+  var gBass = {
+    img: 'assets/Gbass.png',
+    win: ['keyG']};
+
+  var gBassTwo = {
+    img: 'assets/Gbass2.png',
+    win: ['keyG']};
+
+  var picturesArr = [fTreble, aTreble, bTreble, cTreble, dTreble1, dTreble2, eTreble1, eTreble2, gTreble, aBass, aBassTwo, bBass, dBass, dBassTwo, eBass, fBass, fBassTwo, gBass, gBassTwo];
   var currentCombo = fTreble;
   var playedKeys = [];
   var wrongGuess = 0;
@@ -90,7 +129,7 @@ $(document).ready(function(){
 
       }
 
-      var randomIndex= Math.floor(Math.random()*9);
+      var randomIndex= Math.floor(Math.random()*19);
       currentCombo = picturesArr[randomIndex];
       $("#musicNote").attr({src: currentCombo.img});
     }
