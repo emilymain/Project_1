@@ -29,7 +29,7 @@ First off, I created the images of the music notes in Adobe Illustrator. I built
 * The images move around between bass and treble clef...and it's really annoying me. I want to fix this in Adobe Illustrator. I'm sure it's a problem with the sizing of the images.
 * I would like to add a 'life line' option, where you can get a hint if you're struggling with the answer. 
 * Game doesn't reset if you win. This ideally will change when the different levels are an option. 
-* There are some design elements that I would like to change, but kept messing things up when I was trying to make some changes. 
+* There are some design elements that I would like to change. However I kept messing things up when I was trying to make some changes. 
 
 #####Wire Frames
 ![](assets/WireFrame1.jpg)
