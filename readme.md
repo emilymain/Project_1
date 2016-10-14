@@ -11,7 +11,8 @@ The game displays an image of a musical note or notes on the staff and the playe
 
 
 ####Approach Taken
-I built the piano keyboard in HTML and CSS and created the images of the music notes in Adobe Illustrator. I used javascript/jQuery to assign images and win solutions as   properties of individual objects. These objects are passed through an array and compared to the played key in order to determine if the user has gotten the answer correct.
+
+First off, I created the images of the music notes in Adobe Illustrator. I built the piano keyboard in HTML and CSS so that each key could have thier own id. I  then used javascript/jQuery to assign images and win solutions as properties of individual objects. These object properties are passed through an array and compared to the played key in order to determine if the user has gotten the answer correct. I also used jQuery to add an event listener and function to play the associated sound file to each key when clicked.
 
 ####Technology Used 
 * HTML
