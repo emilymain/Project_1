@@ -58,7 +58,7 @@ $(document).ready(function(){
     win: ['keyC']};
 
   var dBass = {
-    img: 'assets/Dbass2.png',
+    img: 'assets/Dbass.png',
     win: ['keyD']};
 
   var eBass = {
