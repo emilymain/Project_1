@@ -3,20 +3,18 @@ body {
   background-color: #FED766;
   font-family: 'Josefin Slab', serif;
 }
+
 h1 {
   font-size: 40px;
   padding-left: 550px;
 }
 
 img {
-  margin-left: 400px;
-  max-width: 500px;
-  position: absolute;
+  position: fixed;
+  left: 400px;
   bottom: 400px;
-  right: 35%;
-}
-.wrong {
-
+  max-width: 500px;
+  height:
 }
 .score-board{
   font-size: 30px;
@@ -40,12 +38,15 @@ img {
   border-radius: 5%;
 
 }
+
 .selectedKey{
   background-color: #009FB7;
 }
+
 .hidden{
   display: none;
 }
+
 #container {
   width: 707px;
   height: 320px;
@@ -53,6 +54,7 @@ img {
   bottom: 5px;
   right: 25%;
 }
+
 #containerBlackKeys{
   position: absolute;
   top: 0;
@@ -61,25 +63,26 @@ img {
 #answerKey{
   bottom: 10px;
 }
-#Instructions {
-
-  display: inline-block;
-  float: right;
+#instructions{
   font-size: 30px;
 }
+
 #keyAsh {
   margin-left: 35px;
-
 }
+
 #keyGsh {
   margin-left: 30px;
 }
+
 #keyFsh {
   margin-left: 125px;
 }
+
 #keyDsh {
   margin-left: 35px;
 }
+
 #keyCsh {
   margin-left: 60px;
 }

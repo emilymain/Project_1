@@ -13,23 +13,27 @@ $(document).ready(function(){
     img: 'assets/BTreble.png',
     win:['keyB']};
 
+  var bTrebleTwo = {
+    img: 'assets/BTreble2.png',
+    win:['keyB']};
+
   var cTreble = {
     img: 'assets/CTreble.png',
     win: ['keyC']};
 
-  var dTreble1 = {
+  var dTreble = {
     img: 'assets/DTreble1.png',
     win: ['keyD']};
 
-  var dTreble2 = {
+  var dTrebleTwo = {
     img: 'assets/DTreble2.png',
     win: ['keyD']};
 
-  var eTreble1 = {
+  var eTreble = {
    img: 'assets/ETreble1.png',
    win: ['keyE']};
 
-  var eTreble2 = {
+  var eTrebleTwo = {
     img: 'assets/ETreble2.png',
     win: ['keyE']};
 
@@ -49,11 +53,11 @@ $(document).ready(function(){
     img: 'assets/Bbass.png',
     win: ['keyB']};
 
-  var dBass = {
-    img: 'assets/Dbass.png',
-    win: ['keyD']};
+  var cBass = {
+    img: 'assets/Cbass.png',
+    win: ['keyC']};
 
-  var dBassTwo = {
+  var dBass = {
     img: 'assets/Dbass2.png',
     win: ['keyD']};
 
@@ -77,11 +81,12 @@ $(document).ready(function(){
     img: 'assets/Gbass2.png',
     win: ['keyG']};
 
-  var picturesArr = [fTreble, aTreble, bTreble, cTreble, dTreble1, dTreble2, eTreble1, eTreble2, gTreble, aBass, aBassTwo, bBass, dBass, dBassTwo, eBass, fBass, fBassTwo, gBass, gBassTwo];
+  var picturesArr = [fTreble, aTreble, bTreble, bTrebleTwo, cTreble, dTreble, dTrebleTwo, eTreble, eTrebleTwo, gTreble, aBass, aBassTwo, bBass, cBass, dBass, eBass, fBass, fBassTwo, gBass, gBassTwo];
   var currentCombo = fTreble;
   var playedKeys = [];
   var wrongGuess = 0;
   var correct = 0;
+
 
   $('#keyC').on('click',(function(){
   $('#keyC').append('<audio autoplay="source"><source src="assets/MusicFiles/C.wav" type="audio/wav"></audio>')
@@ -122,7 +127,6 @@ $(document).ready(function(){
   $('#keyFsh').on('click',(function(){
   $('#keyFsh').append('<audio autoplay="source"><source src="assets/MusicFiles/Fsharp.wav" type="audio/wav"></audio>')
   }));
-
 
   $('#keyGsh').on('click',(function(){
   $('#keyGsh').append('<audio autoplay="source"><source src="assets/MusicFiles/Gsharp.wav" type="audio/wav"></audio>')
@@ -178,9 +182,7 @@ $(document).ready(function(){
 
       }
 
-      var randomIndex= Math.floor(Math.random()*19);
-      currentCombo = picturesArr[randomIndex];
-      $("#musicNote").attr({src: currentCombo.img});
+      newCombo();
     }
   })
 
@@ -190,4 +192,14 @@ $(document).ready(function(){
       wrongGuess = 0;
       correct = 0;
     })
+
+    function newCombo(){
+      var randomIndex= Math.floor(Math.random()*picturesArr.length);
+      if (currentCombo == picturesArr[randomIndex]){
+        newCombo();
+      } else {
+        currentCombo = picturesArr[randomIndex];
+        $("#musicNote").attr({src: currentCombo.img});
+      }
+    }
   });
